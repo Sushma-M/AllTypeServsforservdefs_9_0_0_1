@@ -1,24 +1,20 @@
 {
-  "AdventureWorks2014ExecuteProc1" : {
-    "_id" : "wm-AdventureWorks2014ExecuteProc1-wm.ServiceVariable-1477041336500",
-    "name" : "AdventureWorks2014ExecuteProc1",
+  "ClassicmodelsExecuteEmployeeProcVar" : {
+    "_id" : "wm-ClassicmodelsExecuteEmployeeProcVar-wm.ServiceVariable-1537348052346",
+    "name" : "ClassicmodelsExecuteEmployeeProcVar",
     "owner" : "Page",
     "category" : "wm.ServiceVariable",
-    "dataBinding" : [ {
-      "target" : "Id",
-      "value" : "bind:Widgets.text1.datavalue",
-      "type" : "integer"
-    } ],
-    "type" : "com.testsoapshare.adventureworks2014.models.procedure.Proc1ResponseContent",
-    "service" : "AdventureWorks2014",
-    "operation" : "executeProc1",
-    "operationId" : "ProcedureExecutionController_executeProc1",
+    "dataBinding" : [ ],
+    "type" : "com.alltypeservsforservdefs_9_0_0_1.classicmodels.models.procedure.EmployeeProcVarResponse",
+    "service" : "classicmodels",
+    "operation" : "executeEmployeeProcVar",
+    "operationId" : "ProcedureExecutionController_executeEmployeeProcVar",
     "operationType" : "get",
     "serviceType" : "DataService",
     "dataSet" : [ ],
-    "isList" : true,
+    "isList" : false,
     "maxResults" : 20,
-    "designMaxResults" : 10,
+    "onResult" : "Actions.notificationAction1.invoke()",
     "startUpdate" : true,
     "autoUpdate" : true,
     "inFlightBehavior" : "executeLast",
@@ -923,5 +919,33 @@
     "transformationRequired" : false,
     "saveInPhonegap" : false,
     "controller" : "MyJava"
+  },
+  "notificationAction1" : {
+    "_id" : "wm-notificationAction1-wm.NotificationVariable-1537348119465",
+    "name" : "notificationAction1",
+    "owner" : "Page",
+    "category" : "wm.NotificationVariable",
+    "dataBinding" : [ {
+      "target" : "content",
+      "value" : "inline",
+      "type" : "string"
+    }, {
+      "target" : "text",
+      "value" : "Data Loaded",
+      "type" : "string"
+    }, {
+      "target" : "duration",
+      "value" : "2000",
+      "type" : "number"
+    }, {
+      "target" : "class",
+      "value" : "Success",
+      "type" : "string"
+    }, {
+      "target" : "toasterPosition",
+      "value" : "bottom right",
+      "type" : "string"
+    } ],
+    "operation" : "toast"
   }
 }

@@ -57,12 +57,7 @@ Application.$controller("liveform1Controller", ["$scope",
 	}
 ]);
 
-Application.$controller("grid3_1Controller", ["$scope",
-	function($scope) {
-		"use strict";
-		$scope.ctrlScope = $scope;
-	}
-]);
+
 
 Application.$controller("grid6Controller", ["$scope",
 	function($scope) {
@@ -72,6 +67,13 @@ Application.$controller("grid6Controller", ["$scope",
 ]);
 
 Application.$controller("googleapisTable1Controller", ["$scope",
+	function($scope) {
+		"use strict";
+		$scope.ctrlScope = $scope;
+	}
+]);
+
+Application.$controller("executeEmployeeProcVarTable1Controller", ["$scope",
 	function($scope) {
 		"use strict";
 		$scope.ctrlScope = $scope;

@@ -50,8 +50,13 @@
                     <wm-chart type="Line" title="Line Chart" height="250px" iconclass="wi wi-line-chart" name="chart1"></wm-chart>
                 </wm-tabpane>
             </wm-tabs>
-            <wm-label padding="unset 0.5em" name="label4" caption="javeService:"></wm-label>
-            <wm-label padding="unset 0.5em" name="label5" caption="bind:Variables.javaserviceVariable1.dataSet.value"></wm-label>
+            <wm-panel subheading="subheading" iconclass="wi wi-account-circle" autoclose="outsideClick" title="App message" name="panel1">
+                <wm-panel-footer name="panel_footer1">
+                    <wm-label padding="unset 0.5em" class="text-muted" caption="Addition Info" name="label9"></wm-label>
+                </wm-panel-footer>
+                <wm-select class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language" name="select1"></wm-select>
+                <wm-label padding="unset 0.5em" name="label4" caption="bind:appLocale.Test"></wm-label>
+            </wm-panel>
             <wm-tabs name="tabs1">
                 <wm-tabpane name="tabpane1" title="QueryVar">
                     <wm-table title="" dataset="bind:Variables.HrdbExecuteQueryvar.dataSet" navigation="Basic" name="grid4">
@@ -63,18 +68,8 @@
                     </wm-table>
                 </wm-tabpane>
                 <wm-tabpane name="tabpane2" title="ProcVar">
-                    <wm-composite name="composite1">
-                        <wm-label class="col-md-3 control-label" name="label3" caption="Enter Deptid to get details from proc"></wm-label>
-                        <wm-container class="col-md-9" name="container1">
-                            <wm-text name="text1" type="number"></wm-text>
-                        </wm-container>
-                    </wm-composite>
-                    <wm-table title="" dataset="bind:Variables.AdventureWorks2014ExecuteProc1.dataSet" navigation="Basic" name="grid3_1">
-                        <wm-table-column binding="Name" caption="Name" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column>
-                        <wm-table-column binding="ModifiedDate" caption="Modified Date" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column>
-                        <wm-table-column binding="GroupName" caption="Group Name" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column>
-                        <wm-table-column binding="DepartmentID" caption="Department Id" pcdisplay="true" mobiledisplay="true" readonly="true"></wm-table-column>
-                    </wm-table>
+                    <wm-label padding="unset 0.5em" name="label9_1" caption="ClassicModel: employeePric"></wm-label>
+                    <wm-table name="executeEmployeeProcVarTable1" title="" dataset="bind:Variables.ClassicmodelsExecuteEmployeeProcVar.dataSet" navigation="Basic"></wm-table>
                 </wm-tabpane>
                 <wm-tabpane name="tabpane3" title="LiveVar">
                     <wm-livetable formlayout="dialog" name="livegrid1">

@@ -90,8 +90,12 @@
     "name" : "supportedLocale",
     "owner" : "App",
     "category" : "wm.Variable",
+    "dataBinding" : [ ],
     "dataSet" : {
-      "en" : "English"
+      "en" : "English",
+      "de" : "Deutsch",
+      "kn" : "ಕನ್ನಡ",
+      "mr" : "मराठी"
     },
     "type" : "string",
     "isList" : false,

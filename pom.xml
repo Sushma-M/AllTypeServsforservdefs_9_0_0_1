@@ -13,13 +13,6 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
-                <directory>services/AdventureWorks2014/src</directory>
-                <excludes>
-                    <exclude>**/*.java</exclude>
-                </excludes>
-            </resource>
-            <resource>
-                <filtering>true</filtering>
                 <directory>services/CountryInfoService/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
@@ -35,6 +28,13 @@
             <resource>
                 <filtering>true</filtering>
                 <directory>services/MyJavaService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/classicmodels/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -134,10 +134,10 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>services/AdventureWorks2014/src</source>
                                 <source>services/CountryInfoService/src</source>
                                 <source>services/FeedService/src</source>
                                 <source>services/MyJavaService/src</source>
+                                <source>services/classicmodels/src</source>
                                 <source>services/googleapis/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
@@ -325,6 +325,11 @@
             <version>1.0</version>
             <scope>system</scope>
             <systemPath>${basedir}/lib/sqljdbc4-4.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.38</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
