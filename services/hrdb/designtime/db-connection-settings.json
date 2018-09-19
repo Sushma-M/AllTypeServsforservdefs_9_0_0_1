@@ -11,7 +11,19 @@
   "dbName" : "hrdb",
   "port" : "",
   "schemaName" : "PUBLIC",
-  "tableFilter" : [ ],
+  "tableFilter" : [ {
+    "table" : "DEPARTMENT",
+    "schema" : "PUBLIC"
+  }, {
+    "table" : "EMPLOYEE",
+    "schema" : "PUBLIC"
+  }, {
+    "table" : "USER",
+    "schema" : "PUBLIC"
+  }, {
+    "table" : "VACATION",
+    "schema" : "PUBLIC"
+  } ],
   "schemaFilter" : [ ".*" ],
   "impersonateUser" : false,
   "activeDirectoryDomain" : "",
@@ -23,9 +35,9 @@
   "dataSourceType" : "WM_MANAGED_DATASOURCE",
   "jndiName" : "",
   "reloadInfo" : {
-    "reload" : true,
-    "reason" : "MIGRATION_FAILED",
-    "message" : "Source code re-generation needed with respect to spring upgrade"
+    "reload" : false,
+    "reason" : null,
+    "message" : null
   },
   "readOnly" : true
 }

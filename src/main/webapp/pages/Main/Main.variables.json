@@ -126,6 +126,57 @@
     "isDefault" : true,
     "controller" : "RestServiceVirtual"
   },
+  "GoogleapisInvoke1" : {
+    "_id" : "wm-GoogleapisInvoke1-wm.ServiceVariable-1537346242366",
+    "name" : "GoogleapisInvoke1",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "origin",
+      "value" : "Toronto",
+      "type" : "java.lang.String"
+    }, {
+      "target" : "destination",
+      "value" : "Montreal",
+      "type" : "java.lang.String"
+    }, {
+      "target" : "sensor",
+      "value" : "false",
+      "type" : "java.lang.String"
+    } ],
+    "type" : "googleapis.RootResponse",
+    "service" : "googleapis",
+    "operation" : "invoke",
+    "operationId" : "googleapis_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "RestServiceVirtual"
+  },
+  "HeartRateSocketVariable1" : {
+    "_id" : "wm-HeartRateSocketVariable1-wm.WebSocketVariable-1537347023483",
+    "name" : "HeartRateSocketVariable1",
+    "owner" : "Page",
+    "category" : "wm.WebSocketVariable",
+    "dataBinding" : [ ],
+    "service" : "wavemakeronline",
+    "operationId" : "wavemakeronline_WebSocketServiceVirtualController-invoke",
+    "dataSet" : [ ],
+    "type" : "wavemakeronline.RootResponse",
+    "isDefault" : false,
+    "isList" : false,
+    "startUpdate" : true,
+    "dataUpdateStrategy" : "refresh",
+    "dataLimit" : 20
+  },
   "HrdbEmployeeData" : {
     "_id" : "wm-HrdbEmployeeData-wm.LiveVariable-1477042047384",
     "name" : "HrdbEmployeeData",
@@ -188,7 +239,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "budget",
           "type" : "integer",
@@ -260,7 +311,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "location",
           "type" : "string",
@@ -272,7 +323,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "tenantId",
           "type" : "integer",
@@ -345,7 +396,7 @@
             "precision" : 19,
             "generator" : "assigned",
             "isRelated" : false,
-            "scale" : 0
+            "scale" : 2
           }, {
             "fieldName" : "budget",
             "type" : "integer",
@@ -417,7 +468,7 @@
             "precision" : 19,
             "generator" : "assigned",
             "isRelated" : false,
-            "scale" : 0
+            "scale" : 2
           }, {
             "fieldName" : "location",
             "type" : "string",
@@ -429,7 +480,7 @@
             "precision" : 19,
             "generator" : "assigned",
             "isRelated" : false,
-            "scale" : 0
+            "scale" : 2
           }, {
             "fieldName" : "tenantId",
             "type" : "integer",
@@ -482,7 +533,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "lastname",
           "type" : "string",
@@ -494,7 +545,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "street",
           "type" : "string",
@@ -506,7 +557,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "city",
           "type" : "string",
@@ -518,7 +569,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "state",
           "type" : "string",
@@ -530,7 +581,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "zip",
           "type" : "string",
@@ -542,7 +593,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "birthdate",
           "type" : "date",
@@ -554,7 +605,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "picurl",
           "type" : "string",
@@ -566,7 +617,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "jobTitle",
           "type" : "string",
@@ -578,7 +629,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "username",
           "type" : "string",
@@ -590,7 +641,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "password",
           "type" : "string",
@@ -602,7 +653,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "role",
           "type" : "string",
@@ -614,7 +665,7 @@
           "precision" : 19,
           "generator" : "assigned",
           "isRelated" : false,
-          "scale" : 0
+          "scale" : 2
         }, {
           "fieldName" : "tenantId",
           "type" : "integer",
@@ -651,7 +702,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "lastname",
         "type" : "string",
@@ -663,7 +714,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "street",
         "type" : "string",
@@ -675,7 +726,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "city",
         "type" : "string",
@@ -687,7 +738,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "state",
         "type" : "string",
@@ -699,7 +750,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "zip",
         "type" : "string",
@@ -711,7 +762,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "birthdate",
         "type" : "date",
@@ -723,7 +774,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "picurl",
         "type" : "string",
@@ -735,7 +786,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "jobTitle",
         "type" : "string",
@@ -747,7 +798,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "username",
         "type" : "string",
@@ -759,7 +810,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "password",
         "type" : "string",
@@ -771,7 +822,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "role",
         "type" : "string",
@@ -783,7 +834,7 @@
         "precision" : 19,
         "generator" : "assigned",
         "isRelated" : false,
-        "scale" : 0
+        "scale" : 2
       }, {
         "fieldName" : "tenantId",
         "type" : "integer",
@@ -853,7 +904,7 @@
     "category" : "wm.ServiceVariable",
     "dataBinding" : [ {
       "target" : "name",
-      "value" : "User",
+      "value" : "bind:Variables.loggedInUser.dataSet.name",
       "type" : "string"
     } ],
     "type" : "string",

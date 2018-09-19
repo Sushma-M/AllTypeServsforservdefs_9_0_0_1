@@ -7,4 +7,5 @@
     <import resource="classpath:googleapis.spring.xml"/>
     <import resource="classpath:hrdb.spring.xml"/>
     <import resource="classpath:securityService.spring.xml"/>
+    <import resource="classpath:wavemakeronline.spring.xml"/>
 </beans>

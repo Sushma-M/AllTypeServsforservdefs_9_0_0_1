@@ -52,7 +52,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`Title`", nullable = true, length = 255)
+    @Column(name = "`Title`", nullable = true, length = 8)
     public String getTitle() {
         return this.title;
     }
@@ -62,7 +62,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`FirstName`", nullable = false, length = 255)
+    @Column(name = "`FirstName`", nullable = false, length = 50)
     public String getFirstName() {
         return this.firstName;
     }
@@ -72,7 +72,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`MiddleName`", nullable = true, length = 255)
+    @Column(name = "`MiddleName`", nullable = true, length = 50)
     public String getMiddleName() {
         return this.middleName;
     }
@@ -82,7 +82,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`LastName`", nullable = false, length = 255)
+    @Column(name = "`LastName`", nullable = false, length = 50)
     public String getLastName() {
         return this.lastName;
     }
@@ -92,7 +92,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`Suffix`", nullable = true, length = 255)
+    @Column(name = "`Suffix`", nullable = true, length = 10)
     public String getSuffix() {
         return this.suffix;
     }
@@ -102,7 +102,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`JobTitle`", nullable = false, length = 255)
+    @Column(name = "`JobTitle`", nullable = false, length = 50)
     public String getJobTitle() {
         return this.jobTitle;
     }
@@ -112,7 +112,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`PhoneNumber`", nullable = true, length = 255)
+    @Column(name = "`PhoneNumber`", nullable = true, length = 25)
     public String getPhoneNumber() {
         return this.phoneNumber;
     }
@@ -122,7 +122,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`PhoneNumberType`", nullable = true, length = 255)
+    @Column(name = "`PhoneNumberType`", nullable = true, length = 50)
     public String getPhoneNumberType() {
         return this.phoneNumberType;
     }
@@ -132,7 +132,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`EmailAddress`", nullable = true, length = 255)
+    @Column(name = "`EmailAddress`", nullable = true, length = 50)
     public String getEmailAddress() {
         return this.emailAddress;
     }
@@ -152,7 +152,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`AddressLine1`", nullable = false, length = 255)
+    @Column(name = "`AddressLine1`", nullable = false, length = 60)
     public String getAddressLine1() {
         return this.addressLine1;
     }
@@ -162,7 +162,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`AddressLine2`", nullable = true, length = 255)
+    @Column(name = "`AddressLine2`", nullable = true, length = 60)
     public String getAddressLine2() {
         return this.addressLine2;
     }
@@ -172,7 +172,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`City`", nullable = false, length = 255)
+    @Column(name = "`City`", nullable = false, length = 30)
     public String getCity() {
         return this.city;
     }
@@ -182,7 +182,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`StateProvinceName`", nullable = false, length = 255)
+    @Column(name = "`StateProvinceName`", nullable = false, length = 50)
     public String getStateProvinceName() {
         return this.stateProvinceName;
     }
@@ -192,7 +192,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`PostalCode`", nullable = false, length = 255)
+    @Column(name = "`PostalCode`", nullable = false, length = 15)
     public String getPostalCode() {
         return this.postalCode;
     }
@@ -202,7 +202,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`CountryRegionName`", nullable = false, length = 255)
+    @Column(name = "`CountryRegionName`", nullable = false, length = 50)
     public String getCountryRegionName() {
         return this.countryRegionName;
     }
@@ -212,7 +212,7 @@ public class Vemployee implements Serializable {
     }
 
     @Id
-    @Column(name = "`AdditionalContactInfo`", nullable = true, length = 255)
+    @Column(name = "`AdditionalContactInfo`", nullable = true, length = 2147483647)
     public String getAdditionalContactInfo() {
         return this.additionalContactInfo;
     }

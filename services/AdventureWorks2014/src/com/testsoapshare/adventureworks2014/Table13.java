@@ -24,6 +24,7 @@ public class Table13 implements Serializable {
 
     private Integer id;
     private String column2;
+    private String column3;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,6 +44,15 @@ public class Table13 implements Serializable {
 
     public void setColumn2(String column2) {
         this.column2 = column2;
+    }
+
+    @Column(name = "`COLUMN3`", nullable = true, length = 255)
+    public String getColumn3() {
+        return this.column3;
+    }
+
+    public void setColumn3(String column3) {
+        this.column3 = column3;
     }
 
 

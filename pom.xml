@@ -60,6 +60,13 @@
                     <exclude>**/*.java</exclude>
                 </excludes>
             </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/wavemakeronline/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
         </resources>
         <finalName>AllTypeServsforservdefs_9_0_0_1</finalName>
         <filters>
@@ -134,6 +141,7 @@
                                 <source>services/googleapis/src</source>
                                 <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
+                                <source>services/wavemakeronline/src</source>
                             </sources>
                         </configuration>
                     </execution>
